@@ -1,0 +1,74 @@
+:root {
+  --bg-primary: #313131;
+  --bg-neutral: #f3f3f3;
+  --bg-accent: #fb6500;
+  --bg-white: #ffffff;
+  --bg-black: #000000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  font-family: Helvetica;
+}
+
+body {
+  color: var(--bg-primary);
+}
+
+header {
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--bg-primary);
+}
+
+.header-logo {
+  width: 32px;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  list-style: none;
+}
+
+nav ul li a {
+  color: var(--bg-white);
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+
+.button-primary {
+  background-color: var(--bg-accent);
+  color: var(--bg-white);
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  transition: all 0.5s ease;
+}
+
+.button-primary:hover {
+  background-color: var(--bg-black);
+}
+
+.hero {
+  position: relative;
+}
+
+.hero h1 {
+  position: absolute;
+  top: 50%;
+  left: 5rem;
+  tranform: translateY(-50%, -50%);
+}
+
+main p {
+  margin: 1rem 0;
+}
